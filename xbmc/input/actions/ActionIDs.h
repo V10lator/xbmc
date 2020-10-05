@@ -377,6 +377,10 @@
   604 //!< analog thumbstick move, vertical axis, down; see ACTION_ANALOG_MOVE
 //@}
 
+// HDMI CEC actions
+#define ACTION_CEC_VOLUME_UP 605
+#define ACTION_CEC_VOLUME_DOWN 606
+
 // The NOOP action can be specified to disable an input event. This is
 // useful in user keyboard.xml etc to disable actions specified in the
 // system mappings. ERROR action is used to play an error sound
