@@ -2053,8 +2053,8 @@ bool CApplication::OnAction(const CAction &action)
       CServiceBroker::GetGUI()->GetWindowManager().ActivateWindow(WINDOW_MUSIC_PLAYLIST);
     return true;
   }
-  if (action.getID() == ACTION_CEC_VOLUME_UP || action.getID() == ACTION_CEC_VOLUME_DOWN)
-    return CPeripherals::OnAction(action);
+  if (action.GetID() == ACTION_CEC_VOLUME_UP || action.GetID() == ACTION_CEC_VOLUME_DOWN)
+    return m_ServiceManager->GetPeripherals()->OnAction(action);
 
   return false;
 }
